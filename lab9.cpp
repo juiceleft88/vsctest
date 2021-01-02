@@ -1,5 +1,7 @@
 #include <iostream>
-#include <fstream>
+#include <ostream>
+#include <string>
+#include<algorithm>
 using namespace std;
 
 void tomorrow(int& day, int& month, int& date, int& year)
