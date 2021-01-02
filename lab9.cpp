@@ -2,6 +2,7 @@
 #include <ostream>
 #include <string>
 #include<algorithm>
+#include <istream>
 using namespace std;
 
 void tomorrow(int& day, int& month, int& date, int& year)
@@ -12,8 +13,7 @@ void tomorrow(int& day, int& month, int& date, int& year)
       day=(day%6)+1; //and next day
     }
     else{
-      if(date==29){ //if
-       the date is the 29th of Feb
+      if(date==29){ //if the date is the 29th of Feb
         if(year%4==0){ // it is leap year (divisible by 4)
           date=1; //so next day becomes 1st date of the next month
           month=3;
